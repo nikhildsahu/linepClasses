@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <title>Drawing1</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #content-info{
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #author-info{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        #title{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: 10px;
+            margin-bottom: 2px;
+            font-size: 34px;
+            color: #505050;
+        }
+        .text{
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: #8c8c8c;
+        }
+        #navBar{
+            position: fixed;
+            right:0;
+            bottom: 0;
+            background-color: #f0f3f4;
+            overflow-y: auto;
+            text-align: center;
+        }
+        #svg-container{
+            width: 100%;
+            min-width: 0;
+            margin: 0 10px;
+        }
+        #nav-thumbs{
+            padding: 0 5px;
+        }
+        .nav-thumb{
+            position: relative;
+            margin: 10px auto;
+        }
+        .nav-thumb >p{
+            text-align: center;
+            font-size: 12px;
+            margin: 4px 0 0 0;
+        }
+        .nav-thumb >div{
+            position: relative;
+            display: inline-block;
+            border: 1px solid #c6cfd5;
+        }
+        .nav-thumb img{
+            display: block;
+        }
+        .nav-thumb span{
+            pointer-events: none;
+        }
+        #main-content{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #d0cfd8;
+            display: flex;
+            height: auto;
+            flex-flow: row wrap;
+            text-align:center;
+        }
+        #svg-container >svg{
+            display: block;
+            margin:10px auto;
+            margin-bottom: 0;
+        }
+        #copyright{
+            bottom: 0;
+            left: 50%;
+            margin: 5px auto;
+            font-size: 16px;
+            color: #515151;
+        }
+        #copyright >a{
+            text-decoration: none;
+            color: #77C;
+        }
+        .number{
+            position: absolute;
+            top:0;
+            left:0;
+            border-top:22px solid #76838f;
+            border-right: 22px solid transparent;
+        }
+        .pagenum{
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            top: -23px;
+            left: 2px;
+        }
+        #navBar::-webkit-scrollbar{
+            width: 8px;
+            background-color: #f5f5f5;
+        }
+        #navBar::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        #navBar::-webkit-scrollbar-thumb{
+            border-radius: 8px;
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            background-color: #6b6b70;
+        }
+        #navBar::-webkit-scrollbar-thumb:hover{
+            background-color: #4a4a4f;
+        }
+        .nav-thumb >div:hover{
+            box-shadow:1px 1px 4px rgba(0,0,0,.4);
+        }
+        .selected .number{
+            border-color: #08a1ef transparent;
+        }
+</style>
+  </head>
+  <body>
+    <div id="main-area">
+      <div id="content-info"></div>
+      <div id="main-content">
+        <div id="svg-container"><svg preserveAspectRadio="xMinYMin meet" width="1122" xmlns:xlink="http://www.w3.org/1999/xlink" height="793" id="page1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1123 794" xmlns:ev="http://www.w3.org/2001/xml-events"><style type="text/css"><![CDATA[
+.st1 {fill:#000000;font-family:Arial;font-size:19pt}
+.st2 {fill:#8327f2;font-family:Arial;font-size:14pt;font-weight:bold}
+]]></style><defs/><rect stroke="#808080" width="1123" fill="#ffffff" x="0" height="794" y="0"/><g transform="translate(296,208)" id="shape1"><text class="st1"><tspan x="4" y="117.2">Hey @TimSmoth prepare $Login_page for new Project #axium</tspan></text></g><path stroke-width="2" transform="translate(373,338)" stroke="#000000" fill="none" d="M0,1.9L0,25.1L109,25.1L109,0L109,5.8" id="shape2"/><path stroke-width="2" transform="matrix(-1,0,0,-1,718,298)" stroke="#000000" fill="none" d="M0,1.9L0,25.1L109,25.1L109,0L109,5.8" id="shape3"/><path stroke-width="2" transform="translate(921,338)" stroke="#000000" fill="none" d="M0,1.9L0,25.1L71,25.1L71,0L71,5.8" id="shape4"/><g transform="translate(900,350)" id="shape5"><text class="st2"><tspan x="35" y="34.5">Note</tspan></text></g><g transform="translate(605,222)" id="shape6"><text class="st2"><tspan x="34" y="34.5">Todo</tspan></text></g><g transform="translate(369,350)" id="shape7"><text class="st2"><tspan x="31" y="34.5">Email</tspan></text></g></svg></div>
+      </div>
+      <div id="navBar">
+        <div id="nav-thumbs"/>
+      </div>
+    </div>
+    <script>
+        const svgs=document.getElementById("svg-container").children;
+        const UA=window.navigator.userAgent;
+        const ua=(UA.indexOf('rv:11')+UA.indexOf('Firefox'))>=0;
+        const svgcount=document.getElementById('svg-container').childElementCount;
+        var styleArr=[];
+        var heightArr=[];
+        var navBar=document.getElementById('navBar');
+        var conInfo=document.getElementById('content-info');
+        for(var i=0;i<svgcount;i++){
+            styleArr[i] = {width:svgs[i].getAttribute('width'),height:svgs[i].getAttribute('height')}
+        }
+        window.onresize=function () {
+            renavstyle();
+            resvgstyle();
+        };
+        window.onscroll=renavstyle;
+        window.onload=function () {
+            renavstyle();
+            var sideWidth=navBar.offsetWidth;
+            document.getElementById('content-info').style.marginRight=sideWidth+'px';
+            document.getElementById('main-content').style.marginRight=sideWidth+'px';
+            resvgstyle();
+            doscroll();
+        };
+        function recontainstyle() {
+            var topHeight=conInfo.clientHeight;
+            var svgHeight=0;
+            for(var i=0;i<svgcount;i++){
+                heightArr[i]=svgs[i].getBoundingClientRect().height+10;
+                svgHeight+=svgs[i].clientHeight ||svgs[i].getBoundingClientRect().height;
+            }
+            var fullHeight=svgHeight+Number(topHeight);
+            if(fullHeight<window.innerHeight){
+            document.getElementById('main-content').style.position='absolute';
+            document.getElementById('main-content').style.top=topHeight+'px';
+        }else{
+            document.getElementById('main-content').style.position='';
+        }
+        }
+        function resvgstyle() {
+            var sideWidth=navBar.offsetWidth+20;
+            for(var i=0;i<svgcount;i++){
+                var oriWidth = styleArr[i].width;
+                var oriHeight = styleArr[i].height;
+                var percent = oriHeight / oriWidth;
+                var innerWidth=document.body.offsetWidth-sideWidth;
+                if (innerWidth <= oriWidth) {
+                    svgs[i].removeAttribute('width');
+                    svgs[i].removeAttribute('height');
+                    if (ua) {
+                        svgs[i].setAttribute('height',innerWidth*percent);
+                    }
+                }else {
+                    svgs[i].setAttribute('width', oriWidth);
+                    svgs[i].setAttribute('height', oriHeight);
+                }
+            }
+            recontainstyle();
+        }
+        function renavstyle() {
+            var topHeight=conInfo.clientHeight;
+            var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+            if(scrollTop>topHeight){
+                document.getElementById('navBar').style.top=0+'px';
+            }else{
+                document.getElementById('navBar').style.top=topHeight-scrollTop+'px';
+            }
+            doscroll();
+        }
+        function doscroll() {
+            var topHeight=conInfo.clientHeight;
+            var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+            for(var i=0;i<svgcount;i++){
+                var sum=0;
+                for(var j=0;j<=i;j++){
+                    sum+=heightArr[j];
+                }
+                if(scrollTop+window.innerHeight/2-topHeight-sum<0){
+                    var sub=Number(i)+1;
+                    if(document.querySelector('#nav-thumbs .selected')){
+                        document.querySelector('#nav-thumbs .selected').classList.remove('selected');
+                    }
+                    document.querySelector('.nav-thumb:nth-of-type('+sub+')').classList.add('selected');
+                    break;
+                }
+            }
+        }
+        var navs=document.querySelectorAll('.nav-thumb');
+        for(i=0;i<navs.length;i++){
+            navs[i].children[0].onclick=function () {
+                document.querySelector('#nav-thumbs .selected').classList.remove('selected');
+                this.parentNode.classList.add('selected');
+            }
+        }
+</script>
+  </body>
+</html>

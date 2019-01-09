@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Scroll {
+  scroll-snap-coordinate: 200;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.New {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.background-enter {
+  transform: translate(100%);
+}
+.background-enter.background-enter-active {
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out;
+}
+.background-leave {
+  transform: translate(0%);
+}
+.background-leave.background-leave-active {
+  transform: translate(-100%);
+  transition: transform 1000ms ease-in-out;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

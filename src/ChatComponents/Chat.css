@@ -1,0 +1,172 @@
+.SendMsg {
+  position: fixed;
+  bottom: 0%;
+}
+.Card {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 7%;
+  align-content: center;
+
+  border-radius: 15px 50px;
+  max-width: 450px;
+  background-color: white;
+}
+.Avatar {
+  height: 60px;
+  width: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.User {
+  margin-top: 50px;
+
+  vertical-align: -webkit-baseline-middle;
+  font-size: 15px;
+  width: 100px;
+  height: 20px;
+}
+.Time {
+  margin-top: 50px;
+  font-size: 10px;
+
+  bottom: 0%;
+}
+.Text {
+  padding: 11%;
+  text-align: center;
+}
+.Card2 {
+}
+.SendMsgCard {
+  position: fixed;
+  left: 50%;
+}
+test {
+  width: 200px;
+  display: inline-block;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 0px auto;
+  border: 1px red solid;
+}
+.Rel {
+  position: fixed;
+  bottom: 100px;
+  z-index: 323232;
+  right: 148px;
+}
+.Reli {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.Reliy {
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+}
+.k {
+  width: 100%;
+}
+.Profiles {
+  position: fixed;
+  z-index: 40;
+  right: 0;
+  top: 0%;
+}
+.ak {
+  background-color: blueviolet;
+  width: 25%;
+  margin-top: 50px;
+  position: fixed;
+  right: 0px;
+}
+
+.l {
+  background-color: black;
+}
+.ll {
+  width: 100%;
+  margin-top: 63px;
+}
+.i[src=""] {
+  display: none;
+}
+.box {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.box:hover::after {
+  opacity: 1;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
