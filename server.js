@@ -1,21 +1,17 @@
-const { createServer } = require("http");
-const express = require("express");
-const compression = require("compression");
-const morgan = require("morgan");
-const path = require("path");
-const normalizePort = port => parseInt(port, 10);
-const PORT = normalizePort(process.env.PORT || 5000);
+'use strict';
+const express = require('express');
+const serverless = require('serverless-http');
 const app = express();
+const bodyParser = require('body-parser');
 
-app.use(compression());
+function updateDatabase(data) {
+  ... // update the database
+  return newValue;
+}
 app.use(express.static(path.resolve(__dirname, "build")));
-app.get("*", (req, res) => {
+app.use(bodyParser);
+app.post('*', (res, req) => {
   res.sendFile(path.resolve(__dirname, "build", "index.html"));
 });
-const server = createServer(app);
 
-server.listen(PORT, err => {
-  if (err) throw err;
-
-  console.log("SERVER STARTED");
-});
+module.exports.handler = serverless(app);
