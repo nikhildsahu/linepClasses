@@ -1,0 +1,24 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="205" viewBox="0 0 205 205" width="205">
+    <defs/>
+    <g transform="translate(-542,-216)">
+        <path id="shape1" fill="#6d48fa" transform="translate(543,217)" stroke="#7030a0" d="M0,101.5C0,45.4,45.4,0,101.5,0C157.6,0,203,45.4,203,101.5C203,157.6,157.6,203,101.5,203C45.4,203,0,157.6,0,101.5z"/>
+        <path id="shape2" fill="#ffffff" stroke-width="8" transform="matrix(0,1,-1,0,648.1,253.2)" stroke="#ffffff" d="M0,0L127.1,0L127.1,3.2L0,3.2L0,0z"/>
+        <path id="shape3" fill="#ffffff" stroke-width="8" transform="matrix(0,1,-1,0,595.7,290.1)" stroke="#ffffff" d="M0,0L60.4,0L60.4,3.2L0,3.2L0,0z"/>
+        <path id="shape4" fill="#ffffff" stroke-width="8" transform="matrix(0,1,-1,0,696.5,283)" stroke="#ffffff" d="M0,0L63.9,0L63.9,3.2L0,3.2L0,0z"/>
+        <path id="shape5" fill="#ffffff" stroke-width="8" transform="matrix(0.87,0.5,-0.5,0.87,594.1,347.3)" stroke="#ffffff" d="M0,0L60.4,0L60.4,3.2L0,3.2L0,0z"/>
+        <path id="shape6" fill="#ffffff" stroke-width="8" transform="matrix(0.87,-0.5,0.5,0.87,644.9,377.5)" stroke="#ffffff" d="M0,0L60.4,0L60.4,3.2L0,3.2L0,0z"/>
+        <path id="shape7" fill="#ffffff" stroke-width="8" transform="matrix(0.87,-0.5,0.5,0.87,592.5,286.8)" stroke="#ffffff" d="M0,0L60.4,0L60.4,3.2L0,3.2L0,0z"/>
+        <path id="shape8" fill="#ffffff" stroke-width="8" transform="matrix(0.87,0.5,-0.5,0.87,646.5,256.6)" stroke="#ffffff" d="M0,0L60.4,0L60.4,3.2L0,3.2L0,0z"/>
+        <path id="shape9" fill="#ffffff" transform="translate(632.96,239.66)" stroke="#ffffff" d="M0,13.5C0,6,6,0,13.5,0C20.9,0,27,6,27,13.5C27,20.9,20.9,27,13.5,27C6,27,0,20.9,0,13.5z"/>
+        <path id="shape10" fill="#ffffff" transform="translate(681.44,267.02)" stroke="#ffffff" d="M0,18.3C0,8.2,8.2,0,18.3,0C28.4,0,36.6,8.2,36.6,18.3C36.6,28.4,28.4,36.6,18.3,36.6C8.2,36.6,0,28.4,0,18.3z"/>
+        <path id="shape11" fill="#ffffff" transform="translate(580.57,276.59)" stroke="#ffffff" d="M0,13.5C0,6,6,0,13.5,0C20.9,0,27,6,27,13.5C27,20.9,20.9,27,13.5,27C6,27,0,20.9,0,13.5z"/>
+        <path id="shape12" fill="#ffffff" transform="translate(580.57,330.58)" stroke="#ffffff" d="M0,13.5C0,6,6,0,13.5,0C20.9,0,27,6,27,13.5C27,20.9,20.9,27,13.5,27C6,27,0,20.9,0,13.5z"/>
+        <path id="shape13" fill="#ffffff" transform="translate(681.44,330.58)" stroke="#ffffff" d="M0,13.5C0,6,6,0,13.5,0C20.9,0,27,6,27,13.5C27,20.9,20.9,27,13.5,27C6,27,0,20.9,0,13.5z"/>
+        <path id="shape14" fill="#ffffff" transform="translate(634.56,370.35)" stroke="#ffffff" d="M0,13.5C0,6,6,0,13.5,0C20.9,0,27,6,27,13.5C27,20.9,20.9,27,13.5,27C6,27,0,20.9,0,13.5z"/>
+        <path id="shape15" fill="#ffffff" transform="translate(681.44,325.79)" stroke="#ffffff" d="M0,18.3C0,8.2,8.2,0,18.3,0C28.4,0,36.6,8.2,36.6,18.3C36.6,28.4,28.4,36.6,18.3,36.6C8.2,36.6,0,28.4,0,18.3z"/>
+        <path id="shape16" fill="#ffffff" transform="translate(628.17,365.57)" stroke="#ffffff" d="M0,18.3C0,8.2,8.2,0,18.3,0C28.4,0,36.6,8.2,36.6,18.3C36.6,28.4,28.4,36.6,18.3,36.6C8.2,36.6,0,28.4,0,18.3z"/>
+        <path id="shape17" fill="#ffffff" transform="translate(571,330.58)" stroke="#ffffff" d="M0,18.3C0,8.2,8.2,0,18.3,0C28.4,0,36.6,8.2,36.6,18.3C36.6,28.4,28.4,36.6,18.3,36.6C8.2,36.6,0,28.4,0,18.3z"/>
+        <path id="shape18" fill="#ffffff" transform="translate(571,267.02)" stroke="#ffffff" d="M0,18.3C0,8.2,8.2,0,18.3,0C28.4,0,36.6,8.2,36.6,18.3C36.6,28.4,28.4,36.6,18.3,36.6C8.2,36.6,0,28.4,0,18.3z"/>
+        <path id="shape19" fill="#ffffff" transform="translate(628.17,230.08)" stroke="#ffffff" d="M0,18.3C0,8.2,8.2,0,18.3,0C28.4,0,36.6,8.2,36.6,18.3C36.6,28.4,28.4,36.6,18.3,36.6C8.2,36.6,0,28.4,0,18.3z"/>
+    </g>
+</svg>
