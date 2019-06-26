@@ -20,6 +20,7 @@
  </div>
 
 ##  LineUp Classes : About
+- Visit Wesite : [lineupclasses.herokuapp.com](http://lineupclasses.herokuapp.com/) 
 - It is a complete solution for your class management needs 
 - Easily manage Assignment, Notes & send Notifications.
 - Stop Plagiarism ,by using in-built Plagiarism Checker. 
